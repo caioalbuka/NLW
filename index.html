@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Caio Albuka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.png" alt="Selo Rocketseat" />
+          </span>
+          <img src="images/fotoMenor.png" alt="Foto do Caio Albuka" />
+        </div>
+
+        <h1 id="userName"> Caio Albuka</h1>
+        <a href="https://github.com/caioalbuka" target="_blank">
+          <img src="images/github 2.png" alt="Ícone do GitHub" > CaioAlbuka</a>
+      <p>Estudante de DEV a procura de um oportunidade profissional! </p>
+    
+      <ul>
+      <li>
+        <a href="https://www.youtube.com/channel/UCg3h2pU9DL4UI8QDbw2nVEQ" target="_blank">
+        <img src="images/Group 6423.png" alt="Ícone do YouTube"  />
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/caioalbuka" target="_blank">
+        <img src="images/Group 6424.png" alt="Ícone do Instagram"  />
+        </a>
+      </li>
+      <li>
+        <a href="https://facebook.com/caioalbuka" target="_blank">
+        <img src="images/Group 6422.png" alt="Ícone do FaceBook"  />
+        </a>
+      </li>
+    </ul>    
+  </div>
+</main>
+<script>
+
+      const LinksSocialMedia ={
+        github:"caioalbuka",
+        youtube:"caioalbuka",
+        facebook:"caioalbuka",
+        instagram:"caioalbuka"
+      }
+      
+function changeocialMediaLinks(){
+for (let li of SocialLinks.children) {
+  const social = li.getAttribute('class')
+
+  li.children[0].href = `https;//${social}.com/${LinkSocialMedia[ocial]}`
+}
+}
+changeSocialMediaLink()
+
+function getGitHubProfileInfos(){
+  const url=`http://api.github.com/user/${LinksSocialMedia.github}`
+
+  fetch(url).then(response => response.jason())
+  .then(data => {h1=data.name
+
+  })
+
+}
+
+    </script>
+  </body>
+</html>
